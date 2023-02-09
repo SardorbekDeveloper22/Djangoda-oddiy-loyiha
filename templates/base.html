@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<style type="text/css" media="screen">
+		html{
+			background-color: greenyellow;
+		}
+		ul{
+			text-align: center;
+			background-color: yellowgreen;
+			border: 2px solid #797979;
+		}
+		ul li{
+			display: inline-block;
+			margin: 20px;
+		}
+		ul li a{
+			text-decoration: none;
+			font-size: 40px;
+		}
+		.card {
+		  margin: 20px 20%;
+		  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		  transition: 0.3s;
+		  width: 60%;
+		  border-radius: 5px;
+		  background-color: #9999;
+		}
+
+		.card h1,h2,h3,h4,h5,h6{
+			text-align: center;
+			font-size: 40px;
+		}
+		.card p{
+			font-size: 20px;
+		}
+
+		.card:hover {
+		  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+
+		img {
+		  border-radius: 5px 5px 0 0;
+		}
+
+		.container {
+		  padding: 2px 16px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<b>
+		<li><a href="{% url 'home' %}" title="Home">Asosiy</a></li>
+		<li><a href="{% url 'uzb' %}" title="O'zbekiston haqida">O'zbekiston</a></li>
+		<li><a href="{% url 'kg' %}" title="Qirg'iziston haqida">Qirg'iziston</a></li>
+		<li><a href="{% url 'ru' %}" title="Rossiya haqida">Rossiya</a></li>
+		<li><a href="{% url 'arabic' %}" title="Arabiston haqida">Arabiston</a></li>
+		</b>
+	</ul>
+	
+
+
+
+	
+	<div class="card">
+		{# <img src="img_avatar2.png" alt="Avatar" style="width:100%"> #}
+		<div class="container">
+		{% block content %}
+		{% endblock content %}
+		</div>
+	</div>
+</body>
+</html>
