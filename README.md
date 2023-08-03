@@ -6,10 +6,12 @@ Used python 3.10 and Django 4.0
 ## Getting Started
   - **Installation**
   
-    `pip install Django`
+    ```bash
+    pip install Django
+    ```
   
   - **Start Server**
-    ```
+    ```bash
     python manage.py runserver
     ```
   
