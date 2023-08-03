@@ -1,5 +1,5 @@
 # Django tutorial
-A very simple Django project that provides information about states. In this project, I used the ready-made state information api.
+A very simple Django project that provides information about states.
 
 ## Required Software and Frameworks
 Used python 3.10 and Django 4.0
